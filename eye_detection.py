@@ -16,8 +16,8 @@ while True:
         print(x,y,w,h)
         print(len(face_data ))
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
-        # cv2.putText(frame,"no of face detected "+str(len(face_data)),(100,200), cv2.FONT_HERSHEY_SIMPLEX , 1,(0,0,255),3)
     cv2.imshow("live video",frame)
+    #print("haiiiiiiiiiiiiiiiiiiii")
     end=cv2.waitKey(1)
     if end==ord('q'):
             cv2.destroyAllWindows()
